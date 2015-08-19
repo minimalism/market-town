@@ -1,0 +1,72 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+/* custom styles */ 
+
+#game{
+	width:820px;
+	height:700px;
+}
+
+#gameboard{
+	float:right;
+	margin: 5px;
+	width:640px;
+	height:640px;
+	background-color:#999;
+	border:1px solid black;
+}
+
+.slot {
+	width:64px;
+	height:64px;
+	background-color:#ccc;
+	border-top:1px dotted #666;
+	border-right:1px dotted #666;
+}
+
+.tilestack {
+	margin: 5px;
+	width:70px;
+	height:640px;
+	float:right;
+	background-color:#ccc;
+	border:1px solid black;
+}
+
+.tile{
+	width:64px;
+	height:64px;
+	background-color:#fff;
+	border-radius: 5px;
+	border:2px outset #ddd;
+	cursor: move;
+}
